@@ -12,20 +12,20 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "contract" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "HyeonJun Page"
+title                    : "HyeonJun's Blog"
 title_separator          : "-"
-subtitle                 : "HyeonJun First Blog Study"
-name                     : "HyeonJun First Blog"
-description              : "A flexible Jekyll theme for your blog or site with a minimalist aesthetic"
-url                      : https://hyeonjun222.github.io/
-baseurl                  : "/blog"
+subtitle                 : # site tagline that appears below site title in masthead
+name                     : "HyeonJun"
+description              : "HyeonJun's First Blog"
+url                      : "https://hyeonjun222.github.io/"
+baseurl                  : ""
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/500x300.png"
-logo                     : "/assets/images/88x88.png"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -104,11 +104,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Jeon Hyeon Jun"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I'm' always an student."
+  name             : "HyeonJun"
+  avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "I always a student."
   location         : "Hwaseong City, Korean"
-  email            : andrew6906@naver.com
+  email            : "andrew6906@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -141,6 +141,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/HyeonJun222"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      # url:
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:
@@ -214,7 +217,7 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: ':title/'
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -284,6 +287,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: # true
       share: true
       related: true
